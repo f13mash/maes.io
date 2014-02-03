@@ -1,7 +1,10 @@
+There is no no-color option ("less --help" for help)
+//Shut up, will add shitty styles later
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
 a {
   color: #00B7FF;
 }
