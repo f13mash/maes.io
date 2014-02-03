@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ $(ps -e -o uid,cmd | grep $UID | grep node | grep -v grep | wc -l | tr -s "\n") -eq 0 ]
+if [ $(ps -e -o uid,cmd | grep $UID | grep node  | wc -l | tr -s "\n") -eq 0 ]
 then
         export PATH=/usr/local/bin:$PATH
         cd /root/projects/maes-io
