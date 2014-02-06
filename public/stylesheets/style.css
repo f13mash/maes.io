@@ -323,68 +323,18 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
-#boxes {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0px;
-  width: 460px;
-  height: 100px;
-  text-align: center;
-  position: relative;
-  top: 15px;
-  float: left;
+.social {
   width: 380px;
-  margin-left: 4px;
-}
-#boxes h2 {
-  font-weight: bold;
-  font-family: monospace, sans-serif;
-  margin: 1px;
-}
-#boxes h4 {
-  font-weight: bold;
-  font-family: monospace, sans-serif;
-  margin: 1px;
-}
-#boxes .box {
-  width: 70px;
-  height: 70px;
-  background: #555;
   display: inline-block;
-  margin: 0 1px;
-  overflow: hidden;
-  font-family: 'Raleway', sans-serif;
-  font-size: 120%;
-  font-weight: 200;
-  text-align: center;
-  line-height: 90px;
-  color: #f0f0f0;
-  float: left;
+  position: relative;
+  left: 7px;
 }
-#boxes .plain {
-  background: transparent;
-  margin-bottom: 5px;
-}
-#boxes .box:before {
+.social a {
   width: 70px;
-  background: #444;
-  display: block;
+  background: transparent;
+  display: inline-block;
   font-family: 'foundation-icons', sans-serif;
   font-size: 480%;
   line-height: 70px;
-  color: #777;
-}
-#boxes .twitter:before {
-  content: '\f1e4';
-}
-#boxes .email:before {
-  content: '\f16d';
-}
-#boxes .facebook:before {
-  content: '\f1c4';
-}
-#boxes .linkedin:before {
-  content: '\f1d0';
-}
-#boxes .github:before {
-  content: '\f1c9';
+  color: lightslategray;
 }
