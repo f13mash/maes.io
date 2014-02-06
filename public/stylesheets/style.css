@@ -216,7 +216,7 @@ header {
 }
 .copyright {
   position: relative;
-  top: 40px;
+  bottom: -20px;
   float: right;
 }
 .findme {
@@ -349,7 +349,7 @@ blockquote p {
   height: 70px;
   background: #555;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 1px;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
   font-size: 120%;
@@ -361,6 +361,7 @@ blockquote p {
 }
 #boxes .plain {
   background: transparent;
+  margin-bottom: 5px;
 }
 #boxes .box:before {
   width: 70px;
@@ -384,4 +385,7 @@ blockquote p {
 }
 #boxes .linkedin:before {
   content: '\f1d0';
+}
+#boxes .github:before {
+  content: '\f1c9';
 }

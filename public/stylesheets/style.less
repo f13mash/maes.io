@@ -176,7 +176,7 @@ header {
 
 .copyright {
   position: relative;
-  top: 40px;
+  bottom: -20px;
   float: right;
 }
 
@@ -296,7 +296,7 @@ blockquote p {
   height: 70px;
   background: #555;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 1px;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
   font-size: 120%;
@@ -309,6 +309,7 @@ blockquote p {
 
 #boxes .plain {
   background: transparent;
+  margin-bottom: 5px;
 }
 
 #boxes .box:before {
@@ -322,8 +323,6 @@ blockquote p {
   transition: font-size .5s, line-height .5s;
   -webkit-transition: font-size .5s, line-height .5s;
 }
-
-
 
 #boxes .twitter:before {
   content: '\f1e4';
@@ -339,4 +338,8 @@ blockquote p {
 
 #boxes .linkedin:before {
   content: '\f1d0';
+}
+
+#boxes .github:before {
+  content: '\f1c9';
 }
