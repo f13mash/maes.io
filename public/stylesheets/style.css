@@ -98,6 +98,7 @@ header {
   padding: 5px;
   position: relative;
   top: 6px;
+  margin-right: 60px;
 }
 .leftColumn {
   width: 380px;
