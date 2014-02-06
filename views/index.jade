@@ -1,12 +1,91 @@
 extends layout
 
 block content
-    h1= About
-    p.
-        Hi,
-        My name is Mahesh Gondi.
-    p.
-        Insert a serious quote with no relevance to this site.(need some style here and a stock photo)
-    p.
-        I am just starting, hoping to keep up with blogging. (considering I paid money for it)
+    div.wrapper
+        header
+            section.header-bio
+                h1
+                    a(href="/")
+                        | mahesh gondi
+                    em
+                        | web developer, cyclist,
+                        | trekker,  wannabe mnemonist
+        aside
+        section.content
+            section.leftColumn
+                section.quotes
+                    hgroup
+                        h2
+                            | Thoughts of Wisdom
+                        h4
+                            | hand-picked from books, movies and shows.
+                    blockquote.
+                        You’ve gotta keep making decisions, even if they’re wrong decisions. If you don’t make decisions, you’re stuffed.
+                    p
+                        | --
+                        em  Joe Simpson
+                        |  in
+                        a(href="http://www.imdb.com/title/tt0379557/")  Touching the Void
+
+                section.hireme
+                    h2
+                        | Hire Me!
+                    p.
+                        I am kick-ass developer with knowledge across the stack. I have worked with Javascript, Java, PHP, C, C++(its been some time),
+                        HTML, CSS, Flex, ActionScript. Lately I am more involved with node.js, while trying to remember order of cards in a deck.
+                    p.
+                        Drop me a mail : mashf13[at]gmail[dot]com
+                    p
+                        | You can find my resume&nbsp;
+                        a(href="http://http://maes.io/data/MaheshGondi.pdf") here.
+
+            section.aboutme
+                 h2
+                    | About me
+                    ul
+                        li
+                            p
+                            | full-stack web developer, living in Bangalore.
+                        li
+                            | graduated with bachelors degree in Computer Science and Engineering from
+                            a(href="http://iitbhu.ac.in/")
+                                |  IIT - BHU
+                            |  in 2012.
+                        li
+                            | worked with Yahoo! dealing mainly with its mobile sites and cricket app.
+                        li
+                            | interned at Google Summer of Code (2010) and INRIA, Paris (2011).
+                        li
+                            | highest point(with my feets on earth) -
+                            a(href="http://en.wikipedia.org/wiki/Stok_Kangri") Stok Kangri (6,153m).
+                        li
+                            | learning guitar. ass-kicked
+                        li
+                            | cycling, when my bike is in mood.
+                        li
+                            | inspired by
+                            a(href="http://joshuafoer.com/")  Joshua Foer
+                            , trying to remember the order in a deck of cards. Mnemonists say anybody can do it, so I am testing their theory.
+
+
+        footer
+            section.findme
+                h2
+                    | Find me here
+
+                section.footer
+                    section.social#boxes
+                        a.plain(href="mailto:mashf13@gmail.com")
+                            div.box.email @gmail.com
+                        a.plain(href="http://www.facebook.com/f13mash")
+                            div.box.facebook @facebook
+                        a.plain(href="https://twitter.com/mahesh_gondi")
+                            div.box.twitter @twitter
+                        a.plain(href="http://in.linkedin.com/in/f13mash/")
+                            div.box.linkedin @linkedIn
+            section.copyright
+                p
+                    | Copyright &copy; 2014 &middot; All Rights Reserved &middot;
+                    a(href="http://maesh.io/") mahesh gondi
+
 

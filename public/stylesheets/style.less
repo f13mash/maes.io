@@ -1,9 +1,337 @@
-//Shut up, will add shitty styles later
+@import "common.less";
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+@bg-color: #ddd;
+@card-color: rgba(255, 255, 255, 0.3);
+@light-card-color: rgba(255, 255, 255, 0.1);
+
+@even-color: rgba(51, 51, 51, 0.88);
+@odd-color: rgba(255, 255, 255, 0.70);
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: @bg-color;
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+  font: 16px/1.5 'Open Sans', sans-serif;
+  color: #555;
 }
 
 a {
-  color: #00B7FF;
+  color: #008000;
+}
+
+a:hover {
+  color: @bg-color;
+  background: #008000;
+}
+
+body, input {
+  font-family: 'Open Sans';
+  line-height: 1.3;
+}
+
+ul li, p, div {
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 30px
+}
+
+h1 em {
+  font-size: 13px;
+  position: relative;
+  top: -3px;
+  left: 10px;
+  letter-spacing: .15em;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  .eleven;
+  .center;
+}
+
+.header-bio {
+  background: @card-color;
+  .clearfix;
+  a {
+    padding: 5px;
+    position: relative;
+    top: 6px;
+  }
+}
+
+.leftColumn {
+  .five;
+  padding: 0px;
+  position: relative;
+  float: left;
+
+}
+
+.quotes {
+  .card;
+  .five;
+  margin-top: 5px;
+  h4 {
+    color: #808080;
+    position: relative;
+    left: 5px;
+    top: 5px;
+  }
+  blockquote {
+    position: relative;
+    left: 5px;
+    top: 5px;
+
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+    font-size: 14px;
+    margin: 1px;
+    color: @even-color;
+  }
+  p {
+    padding-right: 10px;
+    text-align: right;
+    font-weight: normal;
+    font: 13px/1.5 'Open Sans', sans-serif;
+
+  }
+
+}
+
+.hireme {
+  .card;
+  .five;
+  background: @card-color;
+  margin-left: 4px;
+  margin-top: 30px;
+
+  float: left;
+  p {
+    position: relative;
+    left: 5px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+    letter-spacing: 0em;
+    font-size: 13px;
+
+  }
+}
+
+.aboutme {
+  .card;
+  position: relative;
+  float: right;
+  ul li {
+    font-size: 13px;
+    letter-spacing: 0em;
+  }
+  ul {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-bottom: 3px;
+    list-style-type: none;
+
+  }
+  li:nth-child(odd) {
+    background: @even-color;
+    color: @odd-color;
+  }
+  li:nth-child(even) {
+    background: @odd-color;
+    color: @even-color;
+  }
+
+}
+
+.copyright {
+  position: relative;
+  top: 40px;
+  float: right;
+}
+
+.findme {
+  .hireme;
+  background: transparent;
+  h2 {
+    background: @light-card-color;
+    text-align: left;
+  }
+}
+
+.card {
+  background: @light-card-color;
+  padding: 0px;
+  .six;
+
+  h2 {
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+    margin: 1px;
+  }
+  h4 {
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+    margin: 1px;
+  }
+}
+
+.one {
+  width: 60px;
+}
+
+.two {
+  width: 140px;
+}
+
+.three {
+  width: 220px;
+}
+
+.four {
+  width: 300px;
+}
+
+.five {
+  width: 380px;
+}
+
+.six {
+  width: 460px;
+}
+
+.seven {
+  width: 540px;
+}
+
+.eight {
+  width: 620px;
+}
+
+.nine {
+  width: 700px;
+}
+
+.ten {
+  width: 780px;
+}
+
+.eleven {
+  width: 860px;
+}
+
+.twelve {
+  width: 940px;
+}
+
+blockquote {
+  background: @card-color;
+  border-left: 10px solid #678073;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #678073;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+//source http://codepen.io/miroot/pen/vdtse
+
+@import url('http://fonts.googleapis.com/css?family=Raleway:200,400');
+@import url('http://mirokarilahti.com/foundation-icons/foundation-icons.css');
+#boxes {
+  .card;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+  float: left;
+  .five;
+  margin-left: 4px;
+
+}
+
+#boxes .box {
+  width: 70px;
+  height: 70px;
+  background: #555;
+  display: inline-block;
+  margin: 0 10px;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 120%;
+  font-weight: 200;
+  text-align: center;
+  line-height: 90px;
+  color: #f0f0f0;
+  float: left;
+}
+
+#boxes .plain {
+  background: transparent;
+}
+
+#boxes .box:before {
+  width: 70px;
+  background: #444;
+  display: block;
+  font-family: 'foundation-icons', sans-serif;
+  font-size: 480%;
+  line-height: 70px;
+  color: #777;
+  transition: font-size .5s, line-height .5s;
+  -webkit-transition: font-size .5s, line-height .5s;
+}
+
+
+
+#boxes .twitter:before {
+  content: '\f1e4';
+}
+
+#boxes .email:before {
+  content: '\f16d';
+}
+
+#boxes .facebook:before {
+  content: '\f1c4';
+}
+
+#boxes .linkedin:before {
+  content: '\f1d0';
 }

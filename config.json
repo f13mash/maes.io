@@ -6,5 +6,6 @@
     "auth": {
         "keyExpireSeconds": 3600
     },
-    "url": "http://127.0.0.1:4000"
+    "url": "http://127.0.0.1:4000",
+    "admin": "mashf13@gmail.com"
 }

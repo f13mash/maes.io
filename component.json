@@ -1,7 +1,8 @@
 {
-    "name": "Indulgin",
-    "version": "0.0.1",
-    "dependencies": {
-        "bootstrap": "latest"
-    }
+  "name": "Indulgin",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "latest",
+    "normalize-css": "~3.0.0"
+  }
 }
