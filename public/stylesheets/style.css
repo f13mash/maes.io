@@ -72,6 +72,10 @@ h1 em {
 a {
   text-decoration: none;
 }
+header {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
 .wrapper {
   width: 860px;
   margin-left: auto;
