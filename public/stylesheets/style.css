@@ -372,8 +372,6 @@ blockquote p {
   font-size: 480%;
   line-height: 70px;
   color: #777;
-  transition: font-size 0.5s, line-height 0.5s;
-  -webkit-transition: font-size 0.5s, line-height 0.5s;
 }
 #boxes .twitter:before {
   content: '\f1e4';
